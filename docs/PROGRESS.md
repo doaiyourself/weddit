@@ -23,9 +23,16 @@
 - 후기 작성 자격: `reviews.inquiry_id NOT NULL`로 스키마 차원 강제
 - `vendor_stats` 캐싱 + trigger 방식으로 빈 깡통 방지 설계
 
-## Day 3 (예정) — SQL 마이그레이션 작성
+## Day 2 (2026-05-19, 완료) — DB 스키마 설계 및 마이그레이션
 
-- `supabase/migrations/` 아래 실제 SQL 작성 예정
+- `docs/SCHEMA.md` 작성 및 2차 보완 (RLS·후기 검증 강화)
+- SQL 마이그레이션 6개 작성 (0001~0006)
+- `create_review` RPC 함수: 후기 작성 5단계 자격 검증
+- Supabase에 마이그레이션 6개 전부 실행 완료, 테이블 12개 + RLS 적용
+
+## Day 3 (예정)
+
+
 
 ---
 ※ 이 파일은 매 작업일 끝에 갱신한다.
